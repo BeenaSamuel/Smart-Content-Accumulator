@@ -4,12 +4,12 @@ from transformers import  pipeline
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 # pretrain Model
-tokenizer = AutoTokenizer.from_pretrained("sshleifer/distilbart-cnn-12-6")
-model = AutoModelForSeq2SeqLM.from_pretrained("sshleifer/distilbart-cnn-12-6")
+tokenizer = AutoTokenizer.from_pretrained("BeenaSamuel/bbc-news-summarizer")
+model = AutoModelForSeq2SeqLM.from_pretrained("BeenaSamuel/bbc-news-summarizer")
 
 # pipeline
 summarizer = pipeline(
-    task="summarization", model="sshleifer/distilbart-cnn-12-6"
+    task="summarization", model="BeenaSamuel/bbc-news-summarizer"
 )
 
 
